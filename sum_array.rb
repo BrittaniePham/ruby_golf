@@ -1,14 +1,7 @@
-def sum
+def sum_array(a)
   puts "enter numbers separated by a space"
-  nums = gets.chomp
-  num_array = nums.split(" ")
-  sum = 0
+  s = 0
 
-  num_array.each do |num|
-  sum += num.to_i 
-  end
-
-  return sum
+  a.each {|num| s += num}
+  puts "sum = #{s}"
 end
-
-puts sum
